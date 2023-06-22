@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Documentation</title>
+  <style>
+    body {
+        padding: 0 150px;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #ffffff;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    p {
+      margin-bottom: 10px;
+      color: #555;
+    }
+    code {
+      background-color: #f7f7f7;
+      color: black;
+      padding: 2px 5px;
+      border-radius: 5px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 5px;
+    }
+    pre {
+      background-color: #333;
+      color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>API Documentation</h1>
+
+  <h2>How to Use the API</h2>
+  <p>The API provides the following endpoints:</p>
+  <ul>
+    <li><code>/api/js</code> - Get information about JavaScript</li>
+    <li><code>/api/js/{element}</code> - Get information about a specific JavaScript element</li>
+    <li><code>/api/js/{element}/{method}</code> - Get information about a specific method of a JavaScript element</li>
+  </ul>
+
+  <h2>Example Usage</h2>
+  <p>To retrieve information about JavaScript:</p>
+  <pre><code>GET /api/js</code></pre>
+
+  <p>To retrieve information about the <code>array</code> element:</p>
+  <pre><code>GET /api/js/array</code></pre>
+
+  <p>To retrieve information about the <code>push</code> method of the <code>array</code> element:</p>
+  <pre><code>GET /api/js/array/push</code></pre>
+
+  <p>The API returns JSON objects containing the requested information.</p>
+
+  <h2>Resources</h2>
+  <p>Here are some additional resources for learning JavaScript:</p>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Mozilla Developer Network</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide">JavaScript MDN Web Docs</a></li>
+    <li><a href="https://www.w3schools.com/js/">W3Schools JavaScript Tutorial</a></li>
+    <li><a href="https://javascript.info/">JavaScript.info</a></li>
+    <li><a href="https://eloquentjavascript.net/">Eloquent JavaScript</a></li>
+  </ul>
+</body>
+</html>
+

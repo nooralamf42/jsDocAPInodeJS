@@ -1,0 +1,174 @@
+{
+"javascript": {
+      "description": "A high-level, interpreted programming language used for web development.",
+      "origin": "JavaScript was created by Brendan Eich at Netscape Communications Corporation in the mid-1990s.",
+      "use": "JavaScript is primarily used for client-side scripting in web browsers to enable interactivity and dynamic content on websites.",
+      "features": [
+        "Object-Oriented Programming",
+        "Event-Driven Programming",
+        "Asynchronous Programming",
+        "Cross-Platform Compatibility"
+      ],
+      "resources": {
+        "Mozilla Developer Network": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        "JavaScript MDN Web Docs": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide",
+        "W3Schools JavaScript Tutorial": "https://www.w3schools.com/js/",
+        "JavaScript.info": "https://javascript.info/",
+        "Eloquent JavaScript": "https://eloquentjavascript.net/"
+      },
+      "elements": {
+        "array": {
+          "description": "Represents an ordered list of elements.",
+          "methods": [
+            {
+              "name": "push",
+              "description": "Adds one or more elements to the end of an array.",
+              "example": "const array = [1, 2, 3];\narray.push(4);\nconsole.log(array); // Output: [1, 2, 3, 4]"
+            },
+            {
+              "name": "pop",
+              "description": "Removes the last element from an array and returns it.",
+              "example": "const array = [1, 2, 3];\nconst lastElement = array.pop();\nconsole.log(lastElement); // Output: 3"
+            },
+            {
+              "name": "shift",
+              "description": "Removes the first element from an array and returns it.",
+              "example": "const array = [1, 2, 3];\nconst firstElement = array.shift();\nconsole.log(firstElement); // Output: 1"
+            },
+            {
+              "name": "unshift",
+              "description": "Adds one or more elements to the beginning of an array.",
+              "example": "const array = [2, 3];\narray.unshift(1);\nconsole.log(array); // Output: [1, 2, 3]"
+            },
+            {
+              "name": "concat",
+              "description": "Concatenates two or more arrays and returns a new array.",
+              "example": "const array1 = [1, 2];\nconst array2 = [3, 4];\nconst concatenatedArray = array1.concat(array2);\nconsole.log(concatenatedArray); // Output: [1, 2, 3, 4]"
+            },
+            {
+              "name": "slice",
+              "description": "Extracts a portion of an array into a new array.",
+              "example": "const array = [1, 2, 3, 4, 5];\nconst slicedArray = array.slice(2, 4);\nconsole.log(slicedArray); // Output: [3, 4]"
+            },
+            {
+              "name": "splice",
+              "description": "Changes the contents of an array by removing, replacing, or adding elements.",
+              "example": "const array = [1, 2, 3, 4];\narray.splice(1, 2, 'a', 'b');\nconsole.log(array); // Output: [1, 'a', 'b', 4]"
+            },
+            {
+              "name": "join",
+              "description": "Joins all elements of an array into a string.",
+              "example": "const array = ['Hello', 'World'];\nconst joinedString = array.join(', ');\nconsole.log(joinedString); // Output: 'Hello, World'"
+            }
+          ]
+        },
+        "string": {
+          "description": "Represents a sequence of characters.",
+          "methods": [
+            {
+              "name": "length",
+              "description": "Returns the length of a string.",
+              "example": "const str = 'Hello';\nconst length = str.length;\nconsole.log(length); // Output: 5"
+            },
+            {
+              "name": "charAt",
+              "description": "Returns the character at a specified index in a string.",
+              "example": "const str = 'Hello';\nconst char = str.charAt(1);\nconsole.log(char); // Output: 'e'"
+            },
+            {
+              "name": "concat",
+              "description": "Concatenates two or more strings and returns a new string.",
+              "example": "const str1 = 'Hello';\nconst str2 = 'World';\nconst concatenatedString = str1.concat(' ', str2);\nconsole.log(concatenatedString); // Output: 'Hello World'"
+            },
+            {
+              "name": "indexOf",
+              "description": "Returns the index of the first occurrence of a specified value in a string.",
+              "example": "const str = 'Hello World';\nconst index = str.indexOf('World');\nconsole.log(index); // Output: 6"
+            },
+            {
+              "name": "replace",
+              "description": "Replaces occurrences of a specified value with another value in a string.",
+              "example": "const str = 'Hello, World';\nconst newStr = str.replace('World', 'John');\nconsole.log(newStr); // Output: 'Hello, John'"
+            },
+            {
+              "name": "split",
+              "description": "Splits a string into an array of substrings based on a specified separator.",
+              "example": "const str = 'Hello,World';\nconst array = str.split(',');\nconsole.log(array); // Output: ['Hello', 'World']"
+            },
+            {
+              "name": "substring",
+              "description": "Extracts a portion of a string between two specified indices.",
+              "example": "const str = 'Hello, World';\nconst substring = str.substring(7, 12);\nconsole.log(substring); // Output: 'World'"
+            },
+            {
+              "name": "toLowerCase",
+              "description": "Converts a string to lowercase.",
+              "example": "const str = 'Hello';\nconst lowerCaseStr = str.toLowerCase();\nconsole.log(lowerCaseStr); // Output: 'hello'"
+            },
+            {
+              "name": "toUpperCase",
+              "description": "Converts a string to uppercase.",
+              "example": "const str = 'Hello';\nconst upperCaseStr = str.toUpperCase();\nconsole.log(upperCaseStr); // Output: 'HELLO'"
+            }
+          ]
+        },
+        "number": {
+          "description": "Represents a numerical value.",
+          "methods": [
+            {
+              "name": "toFixed",
+              "description": "Formats a number with a fixed number of decimal places.",
+              "example": "const number = 5.6789;\nconst formattedNumber = number.toFixed(2);\nconsole.log(formattedNumber); // Output: '5.68'"
+            },
+            {
+              "name": "toPrecision",
+              "description": "Formats a number to a specified precision.",
+              "example": "const number = 123.456;\nconst formattedNumber = number.toPrecision(4);\nconsole.log(formattedNumber); // Output: '123.5'"
+            },
+            {
+              "name": "toString",
+              "description": "Converts a number to a string.",
+              "example": "const number = 42;\nconst str = number.toString();\nconsole.log(str); // Output: '42'"
+            },
+            {
+              "name": "parseInt",
+              "description": "Parses a string and returns an integer.",
+              "example": "const str = '10';\nconst number = parseInt(str);\nconsole.log(number); // Output: 10"
+            },
+            {
+              "name": "parseFloat",
+              "description": "Parses a string and returns a floating-point number.",
+              "example": "const str = '3.14';\nconst number = parseFloat(str);\nconsole.log(number); // Output: 3.14"
+            }
+          ]
+        },
+        "object": {
+          "description": "Represents a collection of key-value pairs.",
+          "methods": [
+            {
+              "name": "keys",
+              "description": "Returns an array of a given object's own enumerable property names.",
+              "example": "const obj = { name: 'John', age: 30 };\nconst keys = Object.keys(obj);\nconsole.log(keys); // Output: ['name', 'age']"
+            },
+            {
+              "name": "values",
+              "description": "Returns an array of a given object's own enumerable property values.",
+              "example": "const obj = { name: 'John', age: 30 };\nconst values = Object.values(obj);\nconsole.log(values); // Output: ['John', 30]"
+            },
+            {
+              "name": "entries",
+              "description": "Returns an array of a given object's own enumerable key-value pairs.",
+              "example": "const obj = { name: 'John', age: 30 };\nconst entries = Object.entries(obj);\nconsole.log(entries); // Output: [['name', 'John'], ['age', 30]]"
+            },
+            {
+              "name": "hasOwnProperty",
+              "description": "Returns a boolean indicating whether the object has the specified property as its own property.",
+              "example": "const obj = { name: 'John', age: 30 };\nconst hasName = obj.hasOwnProperty('name');\nconsole.log(hasName); // Output: true"
+            }
+          ]
+        }
+      }    
+    }
+  }
+  
+
